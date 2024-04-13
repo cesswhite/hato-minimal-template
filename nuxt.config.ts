@@ -3,10 +3,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "@vueuse/motion/nuxt", "@nuxt/image"],
   image: {
-    quality: 80,
+    q: 50,
     alias: {
       unsplash: "https://images.unsplash.com",
     },
+    dir: "assets/images",
     provider: "unsplash",
     unsplash: {
       modifiers: {

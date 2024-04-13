@@ -1,13 +1,5 @@
 <template>
   <div class="w-full relative h-full pt-12 bg-zinc-50 dark:bg-zinc-950">
-    <NuxtImg v-motion-fade src="/shadow.png" :placeholder="img('/shadow.png', { h: 20, w: 20, blur: 16, q: 90 })"
-      class="object-cover object-center fixed w-full h-full left-0 top-0 z-10 dark:mix-blend-soft-light"
-      alt="shadow-background" loading="lazy" />
-
-    <!--  <NuxtImg :src="`/unsplash/photo-${props.src}`"
-      :placeholder="img(`/unsplash/photo-${props.src}`, { h: 20, w: 20, blur: 16, q: 90 })" fit="cover"
-      class="size-60 object-center object-cover cursor-pointer" alt="image-work" @click="showPreviewModal = true"
-      loading="lazy" /> -->
     <div class="relative z-20">
       <LazySwitchMode />
       <UContainer>
@@ -20,6 +12,9 @@
         <Footer />
       </UContainer>
     </div>
+    <img v-motion-fade-visible src="/shadow.png"
+      class="object-cover object-center fixed w-full h-full left-0 top-0 z-10 dark:mix-blend-soft-light"
+      alt="shadow-background" loading="lazy">
   </div>
 </template>
 
