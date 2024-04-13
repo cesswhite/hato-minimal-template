@@ -4,13 +4,13 @@
       class="object-cover object-center fixed w-full h-full left-0 top-0 z-10 dark:mix-blend-soft-light"
       alt="shadow-background" loading="lazy">
     <div class="relative z-20">
-      <SwitchMode />
+      <LazySwitchMode />
       <UContainer>
         <div v-motion-fade class="flex flex-col gap-2 items-center justify-center">
-          <PhotoProfile />
-          <MyInfo />
-          <SocialNetwork />
-          <Gallery />
+          <LazyPhotoProfile />
+          <LazyMyInfo />
+          <LazySocialNetwork />
+          <LazyGallery />
         </div>
         <Footer />
       </UContainer>

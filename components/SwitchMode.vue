@@ -1,6 +1,6 @@
 <template>
     <div class="fixed top-4 right-4">
-        <UButton @click="toggleDark" variant="link" color="white"
+        <UButton aria-label="button to switch theme dark to light" @click="toggleDark" variant="link" color="white"
             :icon="color.preference === 'dark' ? 'i-heroicons-sun' : 'i-heroicons-moon'" />
     </div>
 </template>
