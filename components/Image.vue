@@ -1,19 +1,24 @@
 <template>
-    <img :src="props.src" class="w-full h-60 object-cover object-center cursor-pointer" alt="image-work"
-        @click="showPreviewModal = true" loading="lazy">
+    <NuxtImg :src="`/unsplash/photo-${props.src}`"
+        :placeholder="img(`/unsplash/photo-${props.src}`, { h: 20, w: 20, blur: 16, q: 90 })" fit="cover"
+        class="size-60 object-center object-cover cursor-pointer" alt="image-work" @click="showPreviewModal = true"
+        loading="lazy" />
     <UModal v-model="showPreviewModal" fullscreen>
-        <div class="p-2 h-dvh relative">
+        <div class="p-4 h-dvh relative">
             <div class="absolute top-4 right-4 z-10">
-                <UButton variant="link" color="white" icon="i-heroicons-x-mark-20-solid"
-                    @click="showPreviewModal = false" />
+                <UButton aria-label="close-full-preview" variant="link" color="white" icon="i-heroicons-x-mark-20-solid"
+                    class="ring-1 ring-blue-200" @click="showPreviewModal = false" />
             </div>
-            <img :src="props.src" class="w-full h-full object-cover object-center" alt="">
+            <NuxtImg :src="`/unsplash/photo-${props.src}`"
+                :placeholder="img(`/unsplash/photo-${props.src}`, { h: 20, w: 20, blur: 16, q: 90 })" fit="cover"
+                class="size-full object-center object-cover" loading="lazy" />
         </div>
     </UModal>
 </template>
 
 <script setup lang="ts">
 const showPreviewModal = ref(false)
+const img = useImage()
 
 const props = defineProps<{
     src: string

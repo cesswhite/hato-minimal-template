@@ -20,18 +20,33 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Hato - Minimal Portfolio Web',
-  ogTitle: 'Hato - Minimal Portfolio Web',
+  title: 'Hato | Minimal Portfolio Showcase',
+  ogTitle: 'Hato | Minimal Portfolio Showcase',
   description:
-    'Hato - Minimal Portfolio Web for Freelance, Photographer & Artist',
+    'Discover Hato, the sleek portfolio website perfect for freelancers, photographers, and artists made with Nuxt UI',
   ogDescription:
-    'Hato - Minimal Portfolio Web for Freelance, Photographer & Artist',
+    'Discover Hato, the sleek portfolio website perfect for freelancers, photographers, and artists made with Nuxt UI',
   ogImage: "https://res.cloudinary.com/dkr1hluva/image/upload/v1713023084/og/og-hato_roec1l.jpg",
   ogImageSecureUrl: 'https://res.cloudinary.com/dkr1hluva/image/upload/v1713023084/og/og-hato_roec1l.jpg',
   ogUrl: 'https://res.cloudinary.com/dkr1hluva/image/upload/v1713023084/og/og-hato_roec1l.jpg',
   twitterImage: "https://res.cloudinary.com/dkr1hluva/image/upload/v1713023084/og/og-hato_roec1l.jpg",
   twitterCard: "summary_large_image",
+  twitterTitle: 'Hato | Minimal Portfolio Showcase',
+  twitterDescription: 'Discover Hato, the sleek portfolio website perfect for freelancers, photographers, and artists made with Nuxt UI',
   ogImageWidth: 1280,
   ogImageHeight: 720,
 });
+
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/svg',
+      href: '/favicon.svg'
+    }
+  ]
+})
 </script>
