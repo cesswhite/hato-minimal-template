@@ -13,5 +13,8 @@
     "@nuxt/devtools": "latest",
     "@nuxt/ui": "^2.13.0",
     "nuxt": "^3.10.1"
+  },
+  "dependencies": {
+    "@vueuse/motion": "^2.1.0"
   }
 }
