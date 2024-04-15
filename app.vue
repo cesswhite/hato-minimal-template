@@ -9,9 +9,9 @@
           <LazySocialNetwork />
           <LazyGallery />
         </div>
-        <Footer />
       </UContainer>
     </div>
+    <Footer />
     <img v-motion-fade-visible src="/shadow.png"
       class="object-cover object-center fixed w-full h-full left-0 top-0 z-10 dark:mix-blend-soft-light"
       alt="shadow-background" loading="lazy">
