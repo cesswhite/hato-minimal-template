@@ -30,7 +30,7 @@ Tailored for designers, agencies, or studios, this template is built with Nuxt 3
 ## Specifications
 
 - **Price:** Free
-- **Released date:** 130/04/23
+- **Released date:** 13/04/23
 - **Version:** 0.1
 - **Tech Stack:** Nuxt 3 & TailwindCSS
 - **Category:** Portfolio
