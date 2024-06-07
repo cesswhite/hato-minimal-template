@@ -7,7 +7,7 @@
             </NuxtLink>
             <NuxtLink to="https://github.com/cesswhite/hato-minimal-template" target="_blank"
                 class="text-sm text-zinc-700 hover:text-zinc-950 dark:text-zinc-50/80 hover:dark:text-zinc-50">
-                Donwload Hato | Free Template
+                Download Hato | Free Template
             </NuxtLink>
             <NuxtLink :to="`tel:${phone}`"
                 class="text-sm text-zinc-700 hover:text-zinc-950 dark:text-zinc-50/80 hover:dark:text-zinc-50">
